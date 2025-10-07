@@ -1,0 +1,57 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background: #f5f7fa;
+  line-height: 1.6;
+}
+
+/* Header & Footer */
+header, footer {
+  background: #004aad;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header { position: sticky; top: 0; z-index: 1000; }
+header .logo { font-size: 1.5rem; font-weight: bold; letter-spacing: 1px; }
+
+nav a {
+  color: #fff;
+  margin-left: 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.3rem 0.6rem;
+  border-radius: 5px;
+  transition: background 0.3s, color 0.3s;
+}
+nav a:hover, nav a.active { background: #fff; color: #004aad; }
+
+/* Headings */
+h2 { color: #004aad; margin-bottom: 1rem; }
+
+/* Sections */
+section {
+  background: #fff;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+/* Footer */
+footer { flex-direction: column; text-align: center; }
+footer .social { margin-top: 0.5rem; }
+footer .social a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 1.6rem;
+  transition: color 0.3s;
+}
+footer .social a:hover .fa-instagram { color: #E1306C; }
+footer .social a:hover .fa-facebook { color: #1877F2; }
+footer .social a:hover .fa-linkedin { color: #0A66C2; }
